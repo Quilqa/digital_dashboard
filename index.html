@@ -168,9 +168,12 @@
        <body>
            <div id="login-form">
                 <h2>Введите пароль</h2>
-		<input type="password" id="password" placeholder="Пароль" onkeydown="handleEnter(event)">
-		<button onclick="checkPassword()">Войти</button>
-	    </div>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Пароль">
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+                <button onclick="checkPassword()">Войти</button>
+            </div>
 	<div id="protected-content">
           <div class="container">
             <div class="cont">
